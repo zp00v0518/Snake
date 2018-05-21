@@ -104,20 +104,20 @@ function addSnakeSection(way,callback){
 	let posY = section.posY;
 	if (way == "right"){
 		posX = posX+section.width;
-		if (posX > canvas.width){
+		if (posX >= canvas.width){
 			posX = 0;
 		}
 	}
 	else if (way == "left"){
 		posX = posX-section.width;
-			if (posX < -0){
+			if (posX < 0){
 				posX = canvas.width;
 		}
 	}
 	else if (way == "down"){
 		posY = posY+section.height;
 
-			if (posY > canvas.height){
+			if (posY >= canvas.height){
 			posY = 0;
 		}
 	}
